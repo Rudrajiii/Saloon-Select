@@ -15,7 +15,7 @@ app.get('/contact/:userName', function (req, res) {
   res.send(`Contact Number of ${req.params.userName}`);
 })
 app.get('/error', function (req, res,next) {
-  throw Error("Pata ni Bhai");
+  throw Error("Pata ni Bhai!!");
 })
 app.use(function errorHandler (err, req, res, next) {
   if (res.headersSent) {
